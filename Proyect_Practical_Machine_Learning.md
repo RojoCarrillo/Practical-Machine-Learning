@@ -68,7 +68,7 @@ Getting Data
 First of all, set your current working directory.
 
 ``` r
-setwd("~/GitHub/Practical-Machine-Learning-Johns-Hopkins-Bloomberg-School-of-Public-Health-Coursera/Project")
+setwd("~/Desktop/Cursos/Coursera/Especializacion en ciencia de datos/Practical Machine Learning")
 ```
 
 The following code fragment downloads the dataset to the `data` folder in the current working directory.
@@ -208,7 +208,7 @@ Correlation Matrix of Columns in the Training Data set.
 corrplot(cor(training[, -length(names(training))]), method = "color", tl.cex = 0.5)
 ```
 
-![](Final_Project_Report_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](https://github.com/RojoCarrillo/Practical-Machine-Learning/blob/418b2c1ca10c69db9afd8ccd01cca995e5ef468d/unnamed-chunk-9-1.png)
 
 Partitioning Training Set
 -------------------------
@@ -240,7 +240,7 @@ modelTree <- rpart(classe ~ ., data = training, method = "class")
 prp(modelTree)
 ```
 
-![](Final_Project_Report_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](https://github.com/RojoCarrillo/Practical-Machine-Learning/blob/33346577b255ce9845a4753c507f2cc6bada5a53/unnamed-chunk-11-1.png)
 
 Now, we estimate the performance of the model on the <b>validation</b> data set.
 
